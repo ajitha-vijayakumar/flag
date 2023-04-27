@@ -1,0 +1,43 @@
+<html>
+<head>
+<title>Czech flag</title>
+<style>
+html{
+  min-height:100%;
+  background-color: grey;
+}
+.czech{
+  display:block;
+  position: absolute;
+  height:400px;
+  width:800px;
+  background-color: white;
+}
+.czech:after{
+  content:"";
+  display:block;
+  position: relative;
+	margin-top:0;
+ 	width: 0;
+	height: 0;
+	border-top: 200px solid transparent;
+	border-left: 400px solid blue;
+	border-bottom: 200px solid transparent;
+ 	z-index:2;
+  
+}
+.czech:before{
+  content:"";
+  display:block;
+  position: absolute;
+  background-color: red;
+  margin-top:200px;
+  height:200px;
+  width: 800px;
+}
+</style>
+</head>
+<body>
+<div class="czech"></div>
+</body>
+</html>

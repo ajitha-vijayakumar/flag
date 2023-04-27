@@ -1,0 +1,118 @@
+Github,Git:
+					developer.mozilla.org
+Git is a version control system 
+(Has all the versions of Linux)
+1.open source 
+2.free
+3.distributed
+
+what is a version control system ?
+It acts like a cloud and helps us to have a history of our edits and modifications
+Thus provides all the versions of a particular data.
+eg.Git,Mercurial,SVN,TFS (service providers)
+
+It is a software like wikipedia that provies the Source code of different versions (Open source-since it gives the source code openly to all the users)
+ Git INSTALLATION
+ How to create git repository?
+  		"git init" - to create a empty git repository.
+  		
+  how to see hidden git repository?
+  		"ls -a"
+  		
+ How to create a file in git repository?
+ 		"touch filname"
+ 		eg. touch names.txt
+ 		
+ How to track a file which is created in git repository?
+ 		"git add filename"
+ 		eg. git add names.txt
+ 		
+ If we want to track all the files in the git repository then use "git add ." and here "." refers to all the files in the git repository
+ 
+How to see changes made?
+	use "git status" command
+	
+how to commit a change?
+	git commit -m "message"
+	
+Lets make changes in the file now!!
+
+now lets check for the changes made using git status.
+	eg.i have added some text on names.txt file. after saving it i am checking for the changes made,by using "cat names.txt".It shows:
+		hey 
+		here i am making chnges in my git repository.
+		come lets check it in terminal
+
+How to remove having track(remove from stage/commiting)  of a file which is being ?
+		"git restore --staged names.txt"
+			
+How to see the entire history of changges made?
+		"git log"
+		
+How to delete a file from git repository?
+		use  "rm -rf filename" command
+		eg. rm -rf names.txt
+	
+Each commit is arranged one above the other.
+Hence if we want to delete a commit then,
+	 we should copy the commit value  of before commit 
+	 then use "git reset commit value" command
+	 
+	 eg. if we get output of "git log" as below:
+	 
+	  commit b8534e88a0315cd7c8f5d24290bdd742889bf94d (HEAD -> master)
+	Author: Ajitha Vijayakumar <ajitha7472@gmail.com>
+	Date:   Sun Mar 12 17:38:19 2023 +0530
+
+	    names.txt file deleted
+
+	commit 32945d3278d8eca812346e1e93f5f00290aa8d68
+	Author: Ajitha Vijayakumar <ajitha7472@gmail.com>
+	Date:   Sun Mar 12 17:33:20 2023 +0530
+
+	    names.txt file modified
+
+	commit f9e467da7cd591757eec5d04d4a54ad13833d139
+	Author: Ajitha Vijayakumar <ajitha7472@gmail.com>
+	Date:   Sun Mar 12 12:37:13 2023 +0530
+	
+	    names.txt file added
+	    
+	    
+	    here in above if want to delete changes that were made from 
+
+	commit 32945d3278d8eca812346e1e93f5f00290aa8d68
+	Author: Ajitha Vijayakumar <ajitha7472@gmail.com>
+	Date:   Sun Mar 12 17:33:20 2023 +0530
+
+	    names.txt file modified
+	this commit, then we should copy the commit no. below this commit and enter it in "git reset commitvalue "command. i.e, 
+	git reset  f9e467da7cd591757eec5d04d4a54ad13833d139
+	
+	output:
+	Unstaged changes after reset:
+D	names.txt
+
+now give "git log" to check the status:
+output : 
+commit f9e467da7cd591757eec5d04d4a54ad13833d139 (HEAD -> master)
+Author: Ajitha Vijayakumar <ajitha7472@gmail.com>
+Date:   Sun Mar 12 12:37:13 2023 +0530
+
+    names.txt file added
+
+git stash command :
+	*it used to keep the changes made (i.e either don't want to commit or loose)
+		
+	
+How to get rid of git stash ?
+	It can be done by giving "git stash pop" command	
+	
+	
+	
+	
+	
+	
+	
+	
+	

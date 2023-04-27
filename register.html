@@ -1,0 +1,62 @@
+<html>
+<head>
+<link rel="stylesheet" href="/home/aji/Music/Java/register.css">
+</head>
+
+
+
+<form action="" method="get">
+<label >Name :</label>
+<input type="text"autofocus required placeholder="Enter your name"></input><!..autofocus .. when tab is opened cursor automatically comes here>
+<br><br>
+<label>Password :</label>
+<input type="password" required></input>
+<br><br>
+<label>DOB :</label>
+<input type="date"required></input><br><br>
+<label>AGE :</label>
+<input type="number"min="14"></input>
+<br><br>
+<label>Address :</label><br>
+<textarea rows="5" cols="20" name="text" placeholder="Enter Address"></textarea><br><br>
+<label>Gender :</label><br>
+<input type="radio" value="Male" name="gender">Male
+<input type="radio" value="Female" name="gender">Female
+<!..name is given as same so user can select one at a time><br><br>
+<label>Qualification :</label><br>
+<input type="radio" checked>UG
+<!..checked-to fix a defaut value in radio and checkboxes>
+<input type="radio"  >PG
+<input type="radio">PhD<br><br>
+<lable>Email ID :</label>
+<input type="email"/><br><br>
+<label>Mobile no:</label>
+<input type="tel"pattern="[0-9]{5}-[0-9]{5}"maxlength=11></input><br><br>
+<!..input type="tel"pattern="(0|+91)?[0-9]{5}-[0-9]{5}">
+<label>Choose your Qualification:</label>
+
+<select><!..multiple,size>
+    <option >--Please choose an option--</option>
+    <option selected >UG</option>
+    <!..to fix a default value>
+    <option>PG</option>
+    <option>UG DIPLOMA</option>
+    <option>PG DIPLOMA</option>
+    <option>PHD</option>
+    <option>HSC</option><!..datalist command can beused>
+</select>
+<br><br>
+<label for="Area of Interest"> Area of Interest </label>
+<input type="checkbox"> Data Science </input>
+<input type="checkbox"> Artificial Intelligence </input>
+<input type="checkbox"> Cloud Computing </input>
+<input type="checkbox"> Internet Of Things </input>
+<br><br>
+<input type="file"/><!.. multiple>
+<br><br>
+<input type="submit" value="register"/>
+</html>
+
+
+
+
